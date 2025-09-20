@@ -1,6 +1,6 @@
 <?php
 
-// Problem 1:
+// Problem 1: Statement(String)
 
 $strings = ["Bangladesh", "Laravel", "PHP", "Assignment"];
 

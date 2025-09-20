@@ -1,5 +1,6 @@
 <?php
 
+// Problem 2: Statement(OOP - Movie Rental System)
 class Movie {
     private string $title;
     private int $availableCopies;
@@ -42,7 +43,6 @@ class Customer {
     }
 
     public function rentMovie(Movie $movie): bool {
-        // Customer attempts to rent one copy of the given movie
         return $movie->rentMovie();
     }
 
@@ -60,8 +60,8 @@ $customer1 = new Customer("Alice");
 $customer2 = new Customer("Bob");
 
 
-$customer1->rentMovie($movie1);   // Alice rents Inception
-$customer2->rentMovie($movie2);   // Bob rents Interstellar
+$customer1->rentMovie($movie1);   
+$customer2->rentMovie($movie2);   
 
 echo "Available Copies of 'Inception': " . $movie1->getAvailableCopies() . PHP_EOL;
 echo "Available Copies of 'Interstellar': " . $movie2->getAvailableCopies() . PHP_EOL;
